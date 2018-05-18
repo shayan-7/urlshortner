@@ -1,4 +1,4 @@
-from nanohttp import Controller, RestController, context, json, html, text, HttpFound
+from nanohttp import Controller, RestController, context, html, text, HttpFound
 from hashids import Hashids
 
 list_url = []
@@ -6,8 +6,6 @@ hashids = Hashids(salt='this is my salt')
 
 
 class UrlShortener(RestController):
-
-
     @html
     def post(self):
         url = context.form.get('url')
@@ -32,8 +30,6 @@ class UrlShortener(RestController):
 
 
 class UrlId(RestController):
-
-
     @html
     def get(self, url_id: str=None):
         print('url id: ', url_id)
@@ -70,8 +66,6 @@ class UrlId(RestController):
 
 
 class Root(Controller):
-
-
     urlshortener = UrlShortener()
     urlid = UrlId()
 
