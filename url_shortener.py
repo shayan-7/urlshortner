@@ -1,15 +1,43 @@
-from nanohttp import Controller, RestController, context, html, text, HttpFound
+import functools
+from os.path import join, abspath, dirname
+from mako.lookup import TemplateLookup
+from nanohttp import Controller, RestController, context, html, text, HttpFound, Static, settings, action
 from hashids import Hashids
+
 
 list_url = []
 hashids = Hashids(salt='this is my salt')
 
 
+here = abspath(dirname(__file__))
+lookup = TemplateLookup(directories=[join(here, 'templates')], module_directory=join(here, 'makomodules'))
+
+
+def render_template(func, template_name):
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+
+        result = func(*args, **kwargs)
+        if hasattr(result, 'to_dict'):
+            result = result.to_dict()
+        elif not isinstance(result, dict):
+            raise ValueError('The result must be an instance of dict, not: %s' % type(result))
+
+        template_ = lookup.get_template(template_name)
+        return template_.render(**result)
+
+    return wrapper
+
+
+template = functools.partial(action, content_type='text/html', inner_decorator=render_template)
+
+
 class UrlShortenerController(RestController):
-    @html
+    @template('successfully.mak')
     def post(self):
         url = context.form.get('url')
-        print('url entry: ', url)
+        from pudb import set_trace; set_trace()
 
         if url in list_url:
             key = list_url.index(url)
@@ -17,20 +45,14 @@ class UrlShortenerController(RestController):
             key = len(list_url)
             list_url.append(url)
 
-        print('key: ', key)
         hash_id = hashids.encode(key)
-        yield f"""
-        <html><head><title>Url shortener</title></head><body>
-        <div style="background-color:MediumSeaGreen;color:white;padding:20px;">
-        <h2 style="text-align:center;">Successfully</h2>
-        <p style="text-align:center; color:black"><strong>Shortener url: http://localhost:8080/urlid/{hash_id}</strong></p>
-        </div>
-        </body></html>
-        """
+        return dict(
+            hash_id=hash_id
+        )
 
 
 class UrlIdController(RestController):
-    @html
+    @template('notfoundpage.html')
     def get(self, url_id: str=None):
         print('url id: ', url_id)
 
@@ -56,30 +78,14 @@ class UrlIdController(RestController):
             else:
                 raise HttpFound('http://' + url)
         else:
-            yield """
-            <html><head><title>Url shortener</title></head><body style="padding:80px;">
-            <div style="background-color:Gray;color:white;padding:20px;">
-            <h1 style="text-align:center;">Can not found page</h1>
-            </div>
-            </body></html>
-            """
+            return dict()
 
 
 class Root(Controller):
     urlshortener = UrlShortenerController()
     urlid = UrlIdController()
 
-    @html
+    @template('index.mak')
     def index(self):
-        yield """
-        <html><head><title>Url shortener</title></head><body>
-        <div style="background-color:DodgerBlue;color:white;padding:20px;">
-        <form method="POST" action="/urlshortener">
-        <strong>Iuput url:</strong>
-            <input type="text" name="url" />
-            <input type="submit" value="Submit" />
-        </form>
-        </div>
-        </body></html>
-        """
+        return dict( )
 
