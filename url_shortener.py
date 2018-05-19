@@ -1,7 +1,10 @@
+import hashlib
+import binascii
 import functools
 from os.path import join, abspath, dirname
 from mako.lookup import TemplateLookup
-from nanohttp import Controller, RestController, context, html, text, HttpFound, Static, settings, action
+from nanohttp import Controller, RestController, context, html, text, HttpFound, Static, \
+    settings, action, HttpNotFound
 from hashids import Hashids
 
 
@@ -33,59 +36,56 @@ def render_template(func, template_name):
 template = functools.partial(action, content_type='text/html', inner_decorator=render_template)
 
 
-class UrlShortenerController(RestController):
-    @template('successfully.mak')
-    def post(self):
-        url = context.form.get('url')
-        from pudb import set_trace; set_trace()
-
-        if url in list_url:
-            key = list_url.index(url)
-        else:
-            key = len(list_url)
-            list_url.append(url)
-
-        hash_id = hashids.encode(key)
-        return dict(
-            hash_id=hash_id
-        )
+db = {}
 
 
-class UrlIdController(RestController):
-    @template('notfoundpage.html')
-    def get(self, url_id: str=None):
-        print('url id: ', url_id)
+class Codec:
+    def store(self, url):
+        if not url.startswith('http'):
+            url = f'http://{url}'
 
-        try:
-            if url_id != None:
-                key = hashids.decode(url_id)[0]
-                print('key ', key)
+        key = hashlib.sha1(url.encode()).digest()
+        if key not in db:
+            db[key] = url
 
-                if key < len(list_url):
-                    url = list_url[key]
-                else:
-                    url = None
-            else:
-                url = None
-        except:
-            url = None
+        return binascii.hexlify(key).decode()
 
-        print('url: ', url)
+    def resolve(self, hexstring):
+        hexstring = hexstring.encode()
+        key = binascii.unhexlify(hexstring)
+        if key not in db:
+            raise HttpNotFound()
 
-        if url != None:
-            if 'http://' in url:
-                raise HttpFound(url)
-            else:
-                raise HttpFound('http://' + url)
-        else:
-            return dict()
+        return db[key]
+
+codec = Codec()
 
 
-class Root(Controller):
-    urlshortener = UrlShortenerController()
-    urlid = UrlIdController()
+class Root(RestController):
+
+    def _find_handler(self, remaining_paths):
+        if len(remaining_paths) > 0:
+            return self.resolve, remaining_paths
+        return super()._find_handler(remaining_paths)
 
     @template('index.mak')
-    def index(self):
-        return dict( )
+    def get(self):
+        return dict()
+
+    @template('successfully.mak')
+    def post(self):
+        return dict(hash_id=codec.store(context.form.get('url')))
+
+    @text
+    def resolve(self, hexstring):
+        raise HttpFound(codec.resolve(hexstring))
+
+
+if __name__ == '__main__':
+    from nanohttp import quickstart, configure
+    configure()
+    try:
+        quickstart(Root())
+    except KeyboardInterrupt:
+        print('CTLR+C just pressed')
 
