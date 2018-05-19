@@ -5,7 +5,7 @@ list_url = []
 hashids = Hashids(salt='this is my salt')
 
 
-class UrlShortener(RestController):
+class UrlShortenerController(RestController):
     @html
     def post(self):
         url = context.form.get('url')
@@ -29,7 +29,7 @@ class UrlShortener(RestController):
         """
 
 
-class UrlId(RestController):
+class UrlIdController(RestController):
     @html
     def get(self, url_id: str=None):
         print('url id: ', url_id)
@@ -66,8 +66,8 @@ class UrlId(RestController):
 
 
 class Root(Controller):
-    urlshortener = UrlShortener()
-    urlid = UrlId()
+    urlshortener = UrlShortenerController()
+    urlid = UrlIdController()
 
     @html
     def index(self):
