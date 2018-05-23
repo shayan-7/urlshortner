@@ -40,6 +40,7 @@ db = {}
 
 
 class Codec:
+    
     def store(self, url):
         if not url.startswith('http'):
             url = f'http://{url}'
