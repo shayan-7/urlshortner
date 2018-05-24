@@ -59,6 +59,7 @@ class Codec:
 
         return db[key]
 
+
 codec = Codec()
 
 

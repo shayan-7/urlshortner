@@ -1,0 +1,3 @@
+[console_scripts]
+urlshortener = urlshortener:urlshortener.cli_main
+
