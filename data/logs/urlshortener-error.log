@@ -1,0 +1,30 @@
+2018-05-26 13:40:28 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/restfulpy/controllers.py", line 18, in __call__
+    return super().__call__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 66, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 28, in resolve
+    key = binascii.unhexlify(hexstring)
+binascii.Error: Non-hexadecimal digit found
+2018-05-26 13:55:03 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/restfulpy/controllers.py", line 18, in __call__
+    return super().__call__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/practice/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 66, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 28, in resolve
+    key = binascii.unhexlify(hexstring)
+binascii.Error: Non-hexadecimal digit found

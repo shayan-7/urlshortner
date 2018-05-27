@@ -1,8 +1,9 @@
-from restfulpy.testing import ModelRestCrudTestCase
+from restfulpy.testing import WebAppTestCase
+
 
 import urlshortener
 
 
-class WebTestCase(ModelRestCrudTestCase):
+class WebTestCase(WebAppTestCase):
     application = urlshortener.urlshortener
 

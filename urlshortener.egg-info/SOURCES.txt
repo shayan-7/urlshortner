@@ -1,4 +1,5 @@
 README.md
+setup.py
 urlshortener/__init__.py
 urlshortener.egg-info/PKG-INFO
 urlshortener.egg-info/SOURCES.txt

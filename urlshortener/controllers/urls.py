@@ -1,5 +1,4 @@
-import binascii
-import hashlib
+
 
 from nanohttp import RestController, HttpNotFound, context, HttpFound, text
 
@@ -9,7 +8,7 @@ db = {}
 
 
 class Codec:
-    
+
     def store(self, url):
         if not url.startswith('http'):
             url = f'http://{url}'
@@ -41,3 +40,4 @@ class UrlController(RestController):
     @text
     def get(self, hexstring):
         raise HttpFound(codec.resolve(hexstring))
+

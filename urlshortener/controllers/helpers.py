@@ -3,8 +3,7 @@ import functools
 from mako.lookup import TemplateLookup
 from nanohttp import action
 
-here = abspath(dirname(__file__))
-here = '/home/mohammad/workspace/urlshortener/urlshortener'
+here = abspath(join(dirname(__file__), '..'))
 lookup = TemplateLookup(directories=[join(here, 'templates')], module_directory=join(here, 'makomodules'))
 
 

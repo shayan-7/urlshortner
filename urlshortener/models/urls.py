@@ -15,3 +15,4 @@ class Url(Base):
     def __repr__(self):
         return "<User(url='%s')>" % (
             self.url)
+
