@@ -1,5 +1,4 @@
 README.md
-setup.py
 urlshortener/__init__.py
 urlshortener.egg-info/PKG-INFO
 urlshortener.egg-info/SOURCES.txt
@@ -10,7 +9,6 @@ urlshortener.egg-info/top_level.txt
 urlshortener/controllers/__init__.py
 urlshortener/controllers/helpers.py
 urlshortener/controllers/root.py
-urlshortener/controllers/urls.py
 urlshortener/makomodules/__init__.py
 urlshortener/makomodules/index.mak.py
 urlshortener/makomodules/successfully.mak.py
@@ -19,3 +17,4 @@ urlshortener/models/urls.py
 urlshortener/tests/__init__.py
 urlshortener/tests/helpers.py
 urlshortener/tests/test_root.py
+urlshortener/tests/test_url.py

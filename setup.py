@@ -11,13 +11,15 @@ with open(join(dirname(__file__), 'urlshortener', '__init__.py')) as v_file:
 dependencies = [
     'restfulpy >= 0.41.3',
     'hashids',
+    'nanohttp',
 
     # Deployment
     'gunicorn',
 
     # testing
     'webtest',
-    'nose'
+    'nose',
+    'bddrest'
 ]
 
 

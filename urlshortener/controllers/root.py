@@ -1,43 +1,51 @@
-import binascii
-import hashlib
-
-from nanohttp import json, RestController, HttpNotFound, context, HttpFound, text
-from restfulpy.controllers import JsonPatchControllerMixin, RootController
+from nanohttp import json, RestController, HttpNotFound, context, HttpFound, text, HttpBadRequest
+from restfulpy.controllers import JsonPatchControllerMixin
+from restfulpy.orm import DBSession
+from hashids import Hashids
 
 import urlshortener
+from urlshortener.models.urls import Url
 from .helpers import template
-from .urls import UrlController
-
-db = {}
 
 
-class Codec:
+hashids = Hashids(salt="url shortener")
+
+
+class DB:
 
     def store(self, url):
-        from pudb import set_trace; set_trace()
+
         if not url.startswith('http'):
             url = f'http://{url}'
 
-        key = hashlib.sha1(url.encode()).digest()
-        if key not in db:
-            db[key] = url
+        url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
 
-        return binascii.hexlify(key).decode()
+        if url_exist is None:
+            url_exist = Url(url=url)
+            DBSession.add(url_exist)
+            DBSession.commit()
 
-    def resolve(self, hexstring):
-        hexstring = hexstring.encode()
-        key = binascii.unhexlify(hexstring)
-        if key not in db:
+        hash_id = hashids.encode(url_exist.id)
+        return hash_id
+
+    def resolve(self, hash_id):
+
+        try:
+            db_id, = hashids.decode(hash_id)
+        except ValueError:
+            raise HttpBadRequest()
+
+        url = DBSession.query(Url).filter_by(id=db_id).one_or_none()
+        if url is None:
             raise HttpNotFound()
 
-        return db[key]
+        return url.url
 
 
-codec = Codec()
+db = DB()
 
 
 class ApiV1(JsonPatchControllerMixin, RestController):
-    # urls = UrlController()
 
     @json
     def version(self):
@@ -47,7 +55,6 @@ class ApiV1(JsonPatchControllerMixin, RestController):
 
 
 class Root(RestController):
-    apiv1 = ApiV1()
 
     def _find_handler(self, remaining_paths):
         if len(remaining_paths) > 0:
@@ -60,9 +67,17 @@ class Root(RestController):
 
     @template('successfully.mak')
     def post(self):
-        return dict(hash_id=codec.store(context.form.get('url')))
+        return dict(hash_id=db.store(context.form.get('url')))
 
     @text
     def resolve(self, hexstring):
-        raise HttpFound(codec.resolve(hexstring))
+        raise HttpFound(db.resolve(hexstring))
 
+
+if __name__ == '__main__':
+    from nanohttp import quickstart, configure
+    configure()
+    try:
+        quickstart(Root())
+    except KeyboardInterrupt:
+        print('CTLR+C just pressed')

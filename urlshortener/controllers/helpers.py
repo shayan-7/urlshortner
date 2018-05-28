@@ -25,3 +25,4 @@ def render_template(func, template_name):
 
 
 template = functools.partial(action, content_type='text/html', inner_decorator=render_template)
+

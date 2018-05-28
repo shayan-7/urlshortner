@@ -1,8 +1,10 @@
 from os.path import dirname, join
 
 from restfulpy import Application as BaseApplication
-from .controllers.root import Root
+from restfulpy.orm import DBSession
 
+from urlshortener.models.urls import Url
+from .controllers.root import Root
 __version__ = '0.1.0-planning.0'
 
 
@@ -29,8 +31,9 @@ class Application(BaseApplication):
 
     # noinspection PyArgumentList
     def insert_mockup(self):
-        raise NotImplementedError()
+        url = Url(url='www.varzesh3.com')
+        DBSession.add(url)
+        DBSession.commit()
 
 
 urlshortener = Application()
-
