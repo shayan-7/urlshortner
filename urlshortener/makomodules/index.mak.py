@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1527326764.7707543
+_modified_time = 1527585204.9788141
 _enable_loop = True
 _template_filename = '/home/mohammad/workspace/urlshortener/urlshortener/templates/index.mak'
 _template_uri = 'index.mak'
@@ -18,7 +18,7 @@ def render_body(context,**pageargs):
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         __M_writer = context.writer()
-        __M_writer('<html>\n<head><title>Url shortener</title></head>\n<body>\n        <div style="background-color:DodgerBlue;color:white;padding:20px;">\n        <form method="POST" action="/">\n        <strong>Iuput url:</strong>\n            <input type="text" name="url" />\n            <input type="submit" value="Submit" />\n        </form>\n        </div>\n</body>\n</html>\n')
+        __M_writer('<html>\n<head><title>Url shortener</title></head>\n<body>\n        <div style="background-color:DodgerBlue;color:white;padding:20px;">\n        <form method="POST" action="/">\n        <strong>Iuput url:</strong>\n            <input type="text" name="url" />\n            <input type="submit" value="Submit" />\n        </form>\n        <form method="POST" action="/auth">\n            <input type="submit" value="Login" />\n        </form>\n        </div>\n</body>\n</html>\n')
         return ''
     finally:
         context.caller_stack._pop_frame()

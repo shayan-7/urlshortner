@@ -7,6 +7,9 @@
             <input type="text" name="url" />
             <input type="submit" value="Submit" />
         </form>
+        <form method="POST" action="/auth">
+            <input type="submit" value="Login" />
+        </form>
         </div>
 </body>
 </html>

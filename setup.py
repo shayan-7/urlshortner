@@ -12,6 +12,7 @@ dependencies = [
     'restfulpy >= 0.41.3',
     'hashids',
     'nanohttp',
+    'oauth2client',
 
     # Deployment
     'gunicorn',

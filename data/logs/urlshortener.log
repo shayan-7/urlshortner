@@ -7842,3 +7842,1606 @@ Traceback (most recent call last):
   File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 34, in resolve
     db_id, = hashids.decode(hash_id)
 ValueError: not enough values to unpack (expected 1, got 0)
+2018-05-29 12:17:54 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Urls' object is not iterable
+2018-05-29 12:22:48 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/urls.py", line 24, in get
+    HttpFound(url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/exceptions.py", line 78, in __init__
+    context.response_headers.add_header('Location', location)
+  File "/usr/lib/python3.6/wsgiref/headers.py", line 175, in add_header
+    _value = self._convert_string_type(_value)
+  File "/usr/lib/python3.6/wsgiref/headers.py", line 46, in _convert_string_type
+    " of type str (got {0})".format(repr(value)))
+AssertionError: Header names/values must be of type str (got <urlshortener.models.urls.Url object at 0x7f2b20027cf8>)
+2018-05-29 12:24:12 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/urls.py", line 24, in get
+    HttpFound(url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/exceptions.py", line 78, in __init__
+    context.response_headers.add_header('Location', location)
+  File "/usr/lib/python3.6/wsgiref/headers.py", line 175, in add_header
+    _value = self._convert_string_type(_value)
+  File "/usr/lib/python3.6/wsgiref/headers.py", line 46, in _convert_string_type
+    " of type str (got {0})".format(repr(value)))
+AssertionError: Header names/values must be of type str (got <urlshortener.models.urls.Url object at 0x7f2b11926f98>)
+2018-05-29 12:24:54 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 21, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri ''
+2018-05-29 12:25:01 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 21, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri ''
+2018-05-29 13:24:50 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 21, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 343, in _check
+    return self._load(template.filename, uri)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 323, in _load
+    **self.template_args)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 338, in __init__
+    module = self._compile_from_file(path, filename)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 395, in _compile_from_file
+    self.module_writer)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 720, in _compile_module_file
+    generate_magic_comment=True)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 685, in _compile
+    node = lexer.parse()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lexer.py", line 241, in parse
+    if self.match_expression():
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lexer.py", line 393, in match_expression
+    text, end = self.parse_until_text(True, r'\|', r'}')
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lexer.py", line 133, in parse_until_text
+    **self.exception_kwargs)
+mako.exceptions.SyntaxException: Expected: \|,} in file '/home/mohammad/workspace/urlshortener/urlshortener/templates/successfully.mak' at line: 8 char: 36
+2018-05-29 13:43:26 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 21, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri ''
+2018-05-29 13:44:20 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 21, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri ''
+2018-05-29 13:45:26 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 22, in wrapper
+    return template_.render(**result)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 462, in render
+    return runtime._render(self, self.callable_, args, data)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/makomodules/successfully.mak.py", line 23, in render_body
+    __M_writer(str(hash_id))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+2018-05-29 13:47:08 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 22, in wrapper
+    return template_.render(**result)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 462, in render
+    return runtime._render(self, self.callable_, args, data)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/makomodules/successfully.mak.py", line 23, in render_body
+    __M_writer(str(hash_id))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+2018-05-29 13:55:04 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 22, in wrapper
+    return template_.render(**result)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 462, in render
+    return runtime._render(self, self.callable_, args, data)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/makomodules/successfully.mak.py", line 23, in render_body
+    __M_writer(str(hash_id))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+2018-05-29 14:11:43 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 22, in wrapper
+    return template_.render(**result)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 462, in render
+    return runtime._render(self, self.callable_, args, data)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/makomodules/successfully.mak.py", line 23, in render_body
+    __M_writer(str(hash_id))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+2018-05-29 14:44:28 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 24, in post
+    credentials = flow.step2_exchange(code)
+NameError: name 'code' is not defined
+2018-05-29 15:50:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 24, in post
+    credentials = flow.step2_exchange(code)
+NameError: name 'code' is not defined
+2018-05-30 12:19:51 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 35, in get
+    query = context.query_string()
+TypeError: 'dict' object is not callable
+2018-05-30 12:21:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 35, in get
+    query = context.query_string()
+TypeError: 'dict' object is not callable
+2018-05-30 12:28:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 35, in get
+    query = context.query_string()
+TypeError: 'dict' object is not callable
+2018-05-30 12:28:59 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 35, in get
+    state = context.query_string('state')
+TypeError: 'dict' object is not callable
+2018-05-30 12:46:36 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 35, in get
+    query_dic = context.query_string()
+TypeError: 'dict' object is not callable
+2018-05-30 13:57:26 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 44, in get
+    flow.fetch_token()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 192, in fetch_token
+    raise ValueError('Please supply either code or '
+ValueError: Please supply either code or authorization_response parameters.
+2018-05-30 14:04:31 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in get
+    flow.fetch_token(authorization_response='https://www.googleapis.com/oauth2/v1/userinfo')
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 187, in fetch_token
+    state=self._state)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py", line 174, in parse_request_uri_response
+    response = parse_authorization_code_response(uri, state=state)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 227, in parse_authorization_code_response
+    raise MissingCodeError("Missing code parameter in response.")
+oauthlib.oauth2.rfc6749.errors.MissingCodeError: (missing_code) Missing code parameter in response.
+2018-05-30 14:08:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in get
+    flow.fetch_token(authorization_response='https://www.googleapis.com/oauth2/v1/userinfo', code=query_string_code)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidClientIdError: (invalid_request) Missing parameter: redirect_uri
+2018-05-30 14:37:10 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v2', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 230, in build
+    raise e
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 272, in _retrieve_discovery_doc
+    raise HttpError(resp, content, uri=actual_url)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/discovery/v1/apis/userinfo/v2/rest returned "This service is not available from Iran. If you believe the country of origin was incorrectly identified, please report it at https://support.google.com/websearch/contact/ip.">
+2018-05-30 16:17:26 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v2', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 230, in build
+    raise e
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 272, in _retrieve_discovery_doc
+    raise HttpError(resp, content, uri=actual_url)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/discovery/v1/apis/userinfo/v2/rest returned "This service is not available from Iran. If you believe the country of origin was incorrectly identified, please report it at https://support.google.com/websearch/contact/ip.">
+2018-05-30 16:17:43 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v2', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 230, in build
+    raise e
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 272, in _retrieve_discovery_doc
+    raise HttpError(resp, content, uri=actual_url)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/discovery/v1/apis/userinfo/v2/rest returned "This service is not available from Iran. If you believe the country of origin was incorrectly identified, please report it at https://support.google.com/websearch/contact/ip.">
+2018-05-30 16:18:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v2', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 230, in build
+    raise e
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 272, in _retrieve_discovery_doc
+    raise HttpError(resp, content, uri=actual_url)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/discovery/v1/apis/userinfo/v2/rest returned "This service is not available from Iran. If you believe the country of origin was incorrectly identified, please report it at https://support.google.com/websearch/contact/ip.">
+2018-05-30 16:21:47 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v2', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v2
+2018-05-30 16:22:40 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:23:11 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 51, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:27:30 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:28:20 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.email', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.email.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 16:36:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:42:38 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v2', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v2
+2018-05-30 16:43:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v2
+2018-05-30 16:43:32 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:47:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:48:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 16:50:40 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 42, in get
+    code=query_string_code
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) Bad Request
+2018-05-30 16:56:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('email', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: email  version: v1
+2018-05-30 17:04:48 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:14:38 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:15:17 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-30 17:15:41 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:25:41 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:28:24 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:29:50 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:30:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-30 17:31:53 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 09:48:57 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 230, in build
+    raise e
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 272, in _retrieve_discovery_doc
+    raise HttpError(resp, content, uri=actual_url)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/discovery/v1/apis/userinfo.profile/v1/rest returned "This service is not available from Iran. If you believe the country of origin was incorrectly identified, please report it at https://support.google.com/websearch/contact/ip.">
+2018-05-31 09:50:28 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 09:52:35 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 48, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-05-31 10:47:56 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 11:03:07 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 50, in get
+    headers={'content-type: application/json'
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/models.py", line 306, in prepare
+    self.prepare_headers(headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/models.py", line 438, in prepare_headers
+    for header in headers.items():
+AttributeError: 'set' object has no attribute 'items'
+2018-05-31 11:28:42 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 55, in get
+    http = credentials.authorize(http)
+AttributeError: 'Credentials' object has no attribute 'authorize'
+2018-05-31 11:48:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', http)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 12:18:26 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', http)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 12:18:36 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', http)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 12:18:45 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 44, in get
+    code=query_string_code
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) Code was already redeemed.
+2018-05-31 12:21:15 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', http)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 12:23:23 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+AttributeError: 'Credentials' object has no attribute 'request'
+2018-05-31 12:55:11 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in get
+    drive = build('userinfo.profile', 'v1', credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+AttributeError: 'Credentials' object has no attribute 'request'
+2018-05-31 12:56:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 58, in get
+    drive = build('userinfo.profile', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 222, in build
+    requested_url, discovery_http, cache_discovery, cache)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 269, in _retrieve_discovery_doc
+    resp, content = http.request(actual_url)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1514, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1264, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1187, in _conn_request
+    conn.connect()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/httplib2/__init__.py", line 1013, in connect
+    self.sock = self._context.wrap_socket(sock, server_hostname=self.host)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 694, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'userinfo.profile.googleapis.com' doesn't match either of '*.googleapis.com', '*.clients6.google.com', '*.cloudendpointsapis.com', 'cloudendpointsapis.com', 'googleapis.com'
+2018-05-31 12:57:44 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 58, in get
+    drive = build('userinfo', 'v1', credentials=credentials)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
+    "name: %s  version: %s" % (serviceName, version))
+googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1

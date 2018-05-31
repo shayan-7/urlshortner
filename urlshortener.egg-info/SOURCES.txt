@@ -7,6 +7,7 @@ urlshortener.egg-info/entry_points.txt
 urlshortener.egg-info/requires.txt
 urlshortener.egg-info/top_level.txt
 urlshortener/controllers/__init__.py
+urlshortener/controllers/auth.py
 urlshortener/controllers/helpers.py
 urlshortener/controllers/root.py
 urlshortener/makomodules/__init__.py
@@ -16,5 +17,5 @@ urlshortener/models/__init__.py
 urlshortener/models/urls.py
 urlshortener/tests/__init__.py
 urlshortener/tests/helpers.py
+urlshortener/tests/test_auth.py
 urlshortener/tests/test_root.py
-urlshortener/tests/test_url.py

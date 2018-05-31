@@ -5,26 +5,24 @@ from bddrest.authoring import then, response
 from urlshortener.tests.helpers import BDDTestClass
 
 
-class RootTestCase(BDDTestClass):
+class AuthTestCase(BDDTestClass):
 
-    def test_root(self):
+    def test_auth(self):
+
         call = dict(
-            title='GET',
+            title='POST',
             description='',
-            url='/',
-            verb='GET',
+            url='/auth',
+            verb='POST',
         )
         with self.given(**call):
             then(response.status_code == 200)
 
         call = dict(
-            title='POST',
+            title='GET',
             description='',
-            url='/',
-            verb='POST',
-            form={
-                'url': 'www.varzesh3.com'
-            }
+            url='/auth?state=yZlnAejV1H0cd4cJ8jelnavTsvePuf&code=4/AAACM08NCbCv97ix1FwQK4GaauRUMSG9li3ZNCTRzretKoV_dkQ9roMsL-iYc0crHAQIB9KE9eQqfMH-nS6LxgU&scope=https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/plus.me#',
+            verb='GET',
         )
         with self.given(**call):
             then(response.status_code == 200)

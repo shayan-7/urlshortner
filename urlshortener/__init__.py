@@ -31,7 +31,7 @@ class Application(BaseApplication):
 
     # noinspection PyArgumentList
     def insert_mockup(self):
-        url = Url(url='www.varzesh3.com')
+        url = Url(url='http://www.varzesh3.com')
         DBSession.add(url)
         DBSession.commit()
 
