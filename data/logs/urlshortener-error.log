@@ -9445,3 +9445,193 @@ Traceback (most recent call last):
   File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/googleapiclient/discovery.py", line 233, in build
     "name: %s  version: %s" % (serviceName, version))
 googleapiclient.errors.UnknownApiNameOrVersion: name: userinfo  version: v1
+2018-06-02 10:40:41 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 54, in get
+    req = Request('https://www.googleapis.com/oauth2/v1/userinfo',
+NameError: name 'Request' is not defined
+2018-06-02 10:43:14 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 56, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'http.client.HTTPResponse'>
+2018-06-02 10:46:11 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 56, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'bytes'>
+2018-06-02 10:47:47 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/contexts.py", line 128, in encode_response
+    return buffer.encode(self.response_encoding)
+AttributeError: 'bytes' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 117, in _response
+    yield ctx.encode_response(chunk)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/contexts.py", line 132, in encode_response
+    raise TypeError('The returned response should has the `encode` attribute, such as `str`.')
+TypeError: The returned response should has the `encode` attribute, such as `str`.
+2018-06-02 11:05:30 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 56, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'bytes'>
+2018-06-02 11:15:22 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 56, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'bytes'>
+2018-06-02 11:16:00 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/contexts.py", line 128, in encode_response
+    return buffer.encode(self.response_encoding)
+AttributeError: 'bytes' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 117, in _response
+    yield ctx.encode_response(chunk)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/contexts.py", line 132, in encode_response
+    raise TypeError('The returned response should has the `encode` attribute, such as `str`.')
+TypeError: The returned response should has the `encode` attribute, such as `str`.
+2018-06-02 11:26:28 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/contexts.py", line 128, in encode_response
+    return buffer.encode(self.response_encoding)
+AttributeError: 'bytes' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 117, in _response
+    yield ctx.encode_response(chunk)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/contexts.py", line 132, in encode_response
+    raise TypeError('The returned response should has the `encode` attribute, such as `str`.')
+TypeError: The returned response should has the `encode` attribute, such as `str`.
+2018-06-02 11:30:47 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 56, in post
+    raise HttpFound(authorization_urllll)
+NameError: name 'authorization_urllll' is not defined
+2018-06-02 15:12:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 29, in get
+    code=query_string_code
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) Malformed auth code.
+2018-06-02 15:51:36 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 29, in get
+    code=context.query_string.get('code')
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) Malformed auth code.

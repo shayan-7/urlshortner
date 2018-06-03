@@ -1,64 +1,53 @@
 from os.path import join, dirname, abspath
+from urllib.request import Request, urlopen
 
-from nanohttp import RestController, text, HttpFound, contexts, context
-from oauth2client.client import OAuth2WebServerFlow
-import google.oauth2.credentials
+
+from nanohttp import RestController, text, HttpFound, context, json
 import google_auth_oauthlib.flow
-from googleapiclient.discovery import build
-import requests
-import httplib2
 
-client_secret_file = join(join(abspath(join(dirname(__file__), '..')),
-                               'basedata'), 'client_secrets.json')
-
-flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
-    client_secret_file,
-    scopes=['https://www.googleapis.com/auth/userinfo.profile']
-)
-
-flow.redirect_uri = 'http://localhost:8080/auth'
-
-authorization_url, state = flow.authorization_url(
-    access_type='offline',
-    include_granted_scopes='true')
+client_secret_file = join(abspath(join(dirname(__file__), '..')),
+                          'basedata/client_secrets.json')
 
 
 class Auth(RestController):
 
-    @text
+    @json
     def get(self):
-        query_string_state = context.query_string.get('state')
-        query_string_code = context.query_string.get('code')
-        query_string_scope = context.query_string.get('scope')
-        query_string_scope = 'https://www.googleapis.com/auth/userinfo.profile'
 
         flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
             client_secret_file,
-            scopes=query_string_scope,
-            state=query_string_state)
+            scopes=context.query_string.get('scope'),
+            state=context.query_string.get('state')
+        )
 
         flow.redirect_uri = 'http://localhost:8080/auth'
         flow.fetch_token(
             authorization_response=
             'https://www.googleapis.com/oauth2/v1/userinfo.profile',
-            code=query_string_code
+            code=context.query_string.get('code')
         )
 
         credentials = flow.credentials
-        # revoke = requests.post('https://www.googleapis.com/oauth2/v1/userinfo',
-        #                        params={'token': credentials.token},
-        #                        headers={'content-type': 'application/x-www-form-urlencoded'}
-        #                        )
 
         if credentials is not None:
-            # http = httplib2.Http()
-            # http = credentials.authorize(http)
-            drive = build('userinfo.profile', 'v1', credentials=credentials)
+            headers = {'Authorization': 'OAuth ' + credentials.token}
+            req = Request('https://www.googleapis.com/oauth2/v1/userinfo',
+                          None, headers)
 
-        return dict()
+            response = urlopen(req)
+            json_response = response.read().decode("utf-8")
+
+        return json_response
 
     @text
     def post(self):
+
+        flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
+            client_secret_file,
+            scopes=['https://www.googleapis.com/auth/userinfo.profile']
+        )
+
+        flow.redirect_uri = 'http://localhost:8080/auth'
         authorization_url, state = flow.authorization_url(
             access_type='offline',
             include_granted_scopes='true')
