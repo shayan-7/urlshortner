@@ -17,10 +17,10 @@ class Application(BaseApplication):
 
     """
 
-    def __init__(self):
+    def __init__(self, application_name='urlshortener', root=Root()):
         super().__init__(
-            'urlshortener',
-            root=Root(),
+            application_name,
+            root=root,
             root_path=join(dirname(__file__), '..'),
             version=__version__,
         )
