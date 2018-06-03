@@ -1,0 +1,9 @@
+restfulpy>=0.41.3
+ujson
+aiohttp
+pymongo
+mako
+gunicorn
+requests
+webtest
+nose
