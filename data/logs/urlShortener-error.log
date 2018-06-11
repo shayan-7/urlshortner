@@ -1,0 +1,1762 @@
+2018-05-29 12:14:55 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: 'index.mak'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri 'index.mak'
+2018-05-29 12:14:55 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 93, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+NameError: name 'codec' is not defined
+2018-05-29 12:25:15 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: 'index.mak'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri 'index.mak'
+2018-05-29 12:25:16 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:34:11 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: 'index.mak'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/usr/local/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri 'index.mak'
+2018-05-29 12:34:11 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:35:06 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/mako/lookup.py", line 247, in get_template
+    return self._check(uri, self._collection[uri])
+KeyError: 'index.mak'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in wrapper
+    template_ = lookup.get_template(template_name)
+  File "/usr/local/lib/python3.6/site-packages/mako/lookup.py", line 261, in get_template
+    "Cant locate template for uri %r" % uri)
+mako.exceptions.TopLevelLookupException: Cant locate template for uri 'index.mak'
+2018-05-29 12:35:07 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:36:34 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:36:51 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 23, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 90, in post
+    return dict(hash_id=codec.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 40, in store
+    if not url.startwith('http'):
+AttributeError: 'str' object has no attribute 'startwith'
+2018-05-29 12:36:52 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:40:53 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:40:57 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 23, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 90, in post
+    return dict(hash_id=codec.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 43, in store
+    key = hashlib.sha1(url.encode()).hexdigest()
+NameError: name 'hashlib' is not defined
+2018-05-29 12:40:57 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:41:55 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 23, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 90, in post
+    return dict(hash_id=codec.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 43, in store
+    key = hashlib.sha1(url.encode()).hexdigest()
+NameError: name 'hashlib' is not defined
+2018-05-29 12:41:56 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:41:58 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:42:01 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 23, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 90, in post
+    return dict(hash_id=codec.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 43, in store
+    key = hashlib.sha1(url.encode()).hexdigest()
+NameError: name 'hashlib' is not defined
+2018-05-29 12:42:01 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:49:32 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 23, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 90, in post
+    return dict(hash_id=codec.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 43, in store
+    key = hashlib.sha1(url.encode()).hexdigest()
+NameError: name 'hashlib' is not defined
+2018-05-29 12:49:33 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 94, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 12:59:23 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 23, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id=codec.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 44, in store
+    if key not in db:
+NameError: name 'db' is not defined
+2018-05-29 12:59:24 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 75, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 50, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:02:06 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:02:09 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:11:42 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:15:35 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:17:36 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:21:02 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:21:26 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:22:24 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:23:31 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:24:16 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:25:50 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:25:55 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    hexstring = key
+NameError: name 'key' is not defined
+2018-05-29 13:30:21 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:30:33 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:30:59 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:31:36 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:33:41 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:34:37 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:35:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:36:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:39:10 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:39:12 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:39:12 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:39:14 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:03 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:06 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:15 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:17 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:18 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:20 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:40:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:41:06 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:42:08 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:42:10 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:46:40 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:47:52 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:52:28 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 13:58:37 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:00:45 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:07:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:07:35 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:09:53 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:11:02 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:11:10 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-05-29 14:12:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 80, in resolve
+    raise HttpFound(codec.resolve(hexstring))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 53, in resolve
+    key = hexsting
+NameError: name 'hexsting' is not defined
+2018-06-02 14:12:14 - main - ERROR - None
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2956, in _execute_and_instances
+    close_with_result=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2965, in _get_bind_args
+    **kw
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2947, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:20:05 - main - ERROR - None
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2956, in _execute_and_instances
+    close_with_result=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2965, in _get_bind_args
+    **kw
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2947, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:31:53 - main - ERROR - None
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/usr/local/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2854, in one_or_none
+    ret = list(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2925, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2946, in _execute_and_instances
+    close_with_result=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2955, in _get_bind_args
+    **kw
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2937, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 788, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1190, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/pool.py", line 671, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 410, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:33:06 - main - ERROR - None
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2956, in _execute_and_instances
+    close_with_result=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2965, in _get_bind_args
+    **kw
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2947, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:39:06 - main - ERROR - None
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2956, in _execute_and_instances
+    close_with_result=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2965, in _get_bind_args
+    **kw
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2947, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:41:47 - main - ERROR - None
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2956, in _execute_and_instances
+    close_with_result=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2965, in _get_bind_args
+    **kw
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2947, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:43:38 - main - ERROR - None
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "urlShortener_dev" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2956, in _execute_and_instances
+    close_with_result=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2965, in _get_bind_args
+    **kw
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2947, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1035, in connection
+    execution_options=execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1040, in _connection_for_bind
+    engine, execution_options)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    conn = bind.contextual_connect()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2123, in contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2162, in _wrap_pool_connect
+    e, dialect, self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1476, in _handle_dbapi_exception_noconnection
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2158, in _wrap_pool_connect
+    return fn()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 403, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 791, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 532, in checkout
+    rec = pool._do_get()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1196, in _do_get
+    self._dec_overflow()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1193, in _do_get
+    return self._create_connection()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 350, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 477, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/pool.py", line 674, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 106, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 411, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "urlShortener_dev" does not exist
+ (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-06-02 14:56:27 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in store
+    hash_id = hashids.encode(new_url.id)
+UnboundLocalError: local variable 'new_url' referenced before assignment
+2018-06-02 14:56:37 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in store
+    hash_id = hashids.encode(new_url.id)
+UnboundLocalError: local variable 'new_url' referenced before assignment
+2018-06-02 14:57:28 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 71, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 29, in store
+    hash_id = hashids.encode(new_url.id)
+UnboundLocalError: local variable 'new_url' referenced before assignment
+2018-06-02 16:14:58 - main - ERROR - undefined_table
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 508, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.ProgrammingError: relation "urls" does not exist
+LINE 2: FROM urls 
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 85, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 80, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/helper.py", line 15, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 73, in post
+    return dict(hash_id =db.store(context.form.get('url')))
+  File "/home/shayan/Desktop/urlShortener/urlShortener/controllers/root.py", line 22, in store
+    url_exist = DBSession.query(Url).filter_by(url=url).one_or_none()
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2864, in one_or_none
+    ret = list(self)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2935, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2958, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/home/shayan/.virtualenvs/urlShortener/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 508, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.ProgrammingError) relation "urls" does not exist
+LINE 2: FROM urls 
+             ^
+ [SQL: 'SELECT urls.id AS urls_id, urls.url AS urls_url \nFROM urls \nWHERE urls.url = %(url_1)s'] [parameters: {'url_1': 'http://git.com'}] (Background on this error at: http://sqlalche.me/e/f405)
