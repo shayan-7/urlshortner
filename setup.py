@@ -1,47 +1,41 @@
-
 import re
 from os.path import join, dirname
 from setuptools import setup, find_packages
 
 
 # reading package version (same way the sqlalchemy does)
-with open(join(dirname(__file__), 'urlShortener', '__init__.py')) as v_file:
-    package_version = re.compile(r".*__version__ = '(.*?)'", re.S).match(v_file.read()).group(1)
+with open(join(dirname(__file__), 'urlshortener', '__init__.py')) as v_file:
+    package_version = re.compile('.*__version__ = \'(.*?)\'', re.S).match(v_file.read()).group(1)
 
 
 dependencies = [
     'restfulpy >= 0.41.3',
-    'ujson',
-    'aiohttp',
-    'pymongo',
-    'mako',
+    'hashids',
     'nanohttp',
-    'bddrest',
+    'oauth2client',
 
     # Deployment
     'gunicorn',
 
     # testing
-    'requests',
     'webtest',
-    'nose'
+    'nose',
+    'bddrest'
 ]
 
 
 setup(
-    name="urlShortener",
+    name='urlshortener',
     version=package_version,
-    author="Shayan",
-    author_email="shayn.rokrok@gmail.com",
+    author='Mohammad',
+    author_email='mohammadsheikhian70@gmail.com',
     install_requires=dependencies,
     packages=find_packages(),
-    test_suite="urlShortener.tests",
+    test_suite='urlshortener.tests',
     entry_points={
         'console_scripts': [
-            'urlShortener = urlShortener:urlShortener.cli_main'
+            'urlshortener = urlshortener:urlshortener.cli_main'
         ]
-    },
-    message_extractors={'urlShortener': [
-        ('**.py', 'python', None),
-    ]},
+    }
 )
+
