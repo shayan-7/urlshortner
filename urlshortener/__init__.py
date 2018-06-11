@@ -1,5 +1,7 @@
 from os.path import dirname, join
 
+from restfulpy.authentication import Authenticator
+
 from restfulpy import Application as BaseApplication
 from restfulpy.orm import DBSession
 
@@ -22,7 +24,7 @@ class Application(BaseApplication):
             application_name,
             root=root,
             root_path=join(dirname(__file__), '..'),
-            version=__version__,
+            version=__version__
         )
 
     # noinspection PyArgumentList

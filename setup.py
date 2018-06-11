@@ -5,7 +5,8 @@ from setuptools import setup, find_packages
 
 # reading package version (same way the sqlalchemy does)
 with open(join(dirname(__file__), 'urlshortener', '__init__.py')) as v_file:
-    package_version = re.compile('.*__version__ = \'(.*?)\'', re.S).match(v_file.read()).group(1)
+    package_version = re.compile('.*__version__ = \'(.*?)\'', re.S)\
+        .match(v_file.read()).group(1)
 
 
 dependencies = [
@@ -13,6 +14,8 @@ dependencies = [
     'hashids',
     'nanohttp',
     'oauth2client',
+    'requests',
+    'sqlalchemy',
 
     # Deployment
     'gunicorn',

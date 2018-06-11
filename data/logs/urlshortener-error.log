@@ -9635,3 +9635,1115 @@ Traceback (most recent call last):
   File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
     raise cls(**kwargs)
 oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) Malformed auth code.
+2018-06-07 10:41:04 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 43, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:41:35 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 43, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:43:51 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:44:59 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:45:17 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:53:18 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:53:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:54:29 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.loads(json_file)
+AttributeError: 'functools.partial' object has no attribute 'loads'
+2018-06-07 10:55:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 10:58:39 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 11:14:20 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 45, in post
+    client_config = json.load(json_file)
+AttributeError: 'functools.partial' object has no attribute 'load'
+2018-06-07 11:29:32 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 47, in post
+    redirect_uri=settings.redirect_uri_auth
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/pymlconf/proxy.py", line 44, in __getattr__
+    return getattr(object.__getattribute__(self, 'proxied_object'), key)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/pymlconf/config_nodes.py", line 138, in __getattr__
+    raise ConfigKeyError(key)
+pymlconf.errors.ConfigKeyError: Config key was not found: "redirect_uri_auth"
+2018-06-07 11:33:06 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 50, in post
+    flow.client_config.auth_uri = settings.auth_uri_service
+AttributeError: 'dict' object has no attribute 'auth_uri'
+2018-06-07 11:43:56 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 54, in post
+    include_granted_scopes='true')
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 212, in authorization_url
+    self.client_config['auth_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 153, in authorization_url
+    **kwargs), state
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py", line 86, in prepare_request_uri
+    redirect_uri=redirect_uri, scope=scope, state=state, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 71, in prepare_grant_uri
+    raise InsecureTransportError()
+oauthlib.oauth2.rfc6749.errors.InsecureTransportError: (insecure_transport) OAuth 2 MUST utilize https.
+2018-06-07 11:52:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 54, in post
+    include_granted_scopes='true')
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 212, in authorization_url
+    self.client_config['auth_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 153, in authorization_url
+    **kwargs), state
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/web_application.py", line 86, in prepare_request_uri
+    redirect_uri=redirect_uri, scope=scope, state=state, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 71, in prepare_grant_uri
+    raise InsecureTransportError()
+oauthlib.oauth2.rfc6749.errors.InsecureTransportError: (insecure_transport) OAuth 2 MUST utilize https.
+2018-06-07 12:30:09 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/urllib/request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/usr/lib/python3.6/http/client.py", line 1400, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 814, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1068, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:833)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 46, in post
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 526, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.6/urllib/request.py", line 544, in _open
+    '_open', req)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/usr/lib/python3.6/urllib/request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:833)>
+2018-06-07 12:42:33 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 46, in post
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2018-06-07 12:44:24 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-07 12:47:58 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-07 12:48:54 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/http/client.py", line 885, in _get_hostport
+    port = int(host[i+1:])
+ValueError: invalid literal for int() with base 10: '38937root'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 46, in post
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 526, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.6/urllib/request.py", line 544, in _open
+    '_open', req)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 1346, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.6/urllib/request.py", line 1286, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+  File "/usr/lib/python3.6/http/client.py", line 849, in __init__
+    (self.host, self.port) = self._get_hostport(host, port)
+  File "/usr/lib/python3.6/http/client.py", line 890, in _get_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+http.client.InvalidURL: nonnumeric port: '38937root'
+2018-06-07 12:49:21 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+TypeError: object() takes no parameters
+2018-06-07 12:49:23 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 46, in post
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal server error
+2018-06-07 12:50:38 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-07 12:51:52 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-07 13:06:45 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-07 13:09:48 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-07 13:10:04 - main - ERROR - Exception while serving the response.
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 116, in _response
+    for chunk in response_iterable:
+TypeError: 'Root' object is not iterable
+2018-06-09 09:51:04 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 30, in get
+    data = dict(urldecode(body))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/common.py", line 136, in urldecode
+    raise ValueError(error % (set(query) - urlencoded, query))
+ValueError: Error trying to decode a non urlencoded string. Found invalid characters: {'client_id', 'redirect_uri', 'grant_type', 'client_secret', 'code'} in the string: '{'grant_type': 'authorization_code', 'code': '4/AAA_ieAH5x0_nAl45U03Iom6Ut2bcMV-oN8pYrnZtGUYKDpovHVmjpCbWu4zBdUYrLtb6JMguFf_E2tyxqLo_vo', 'client_id': '781215968670-qg3g1nadrm9k2rp8nrhcai73sa5o3fiq.apps.googleusercontent.com', 'redirect_uri': 'http://localhost:8080/auth', 'client_secret': 'oj5qITnaVreCDFrXYATj9BtO'}'. Please ensure the request/response body is x-www-form-urlencoded.
+2018-06-09 09:55:23 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 32, in get
+    req_token = Request('', body, headers_token)
+  File "/usr/lib/python3.6/urllib/request.py", line 329, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.6/urllib/request.py", line 355, in full_url
+    self._parse()
+  File "/usr/lib/python3.6/urllib/request.py", line 384, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: ''
+2018-06-09 09:56:54 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 34, in get
+    response_token = urlopen(req_token)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 526, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.6/urllib/request.py", line 544, in _open
+    '_open', req)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/usr/lib/python3.6/urllib/request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1064, in _send_output
+    + b'\r\n'
+TypeError: can't concat str to bytes
+2018-06-09 09:58:44 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 34, in get
+    response_token = urlopen(req_token)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 526, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.6/urllib/request.py", line 544, in _open
+    '_open', req)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/usr/lib/python3.6/urllib/request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1064, in _send_output
+    + b'\r\n'
+TypeError: can't concat str to bytes
+2018-06-09 10:31:42 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 42, in get
+    code=context.query_string.get('code'),
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/google_auth_oauthlib/flow.py", line 241, in fetch_token
+    self.client_config['token_uri'], **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) Code was already redeemed.
+2018-06-09 12:19:01 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 33, in get
+    body_token['client_id'] = client_secret_data['client_id']
+KeyError: 'client_id'
+2018-06-09 13:41:02 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 36, in get
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2018-06-09 13:52:54 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 36, in get
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2018-06-09 13:55:38 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 40, in get
+    return response_profile.read().decode("utf-8")
+AttributeError: 'Response' object has no attribute 'read'
+2018-06-09 13:56:18 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 40, in get
+    return response_profile.read().decode("utf-8")
+AttributeError: 'Response' object has no attribute 'read'
+2018-06-09 14:24:57 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 36, in get
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2018-06-09 14:30:44 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 36, in get
+    response = urlopen(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2018-06-09 15:12:23 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/application.py", line 64, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 83, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/controllers.py", line 78, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/nanohttp/decorators.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 37, in get
+    headers=headers
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'local': No schema supplied. Perhaps you meant http://local?
+2018-06-09 16:26:01 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 37, in get
+    oath='OAuth' + h
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+TypeError: request() got an unexpected keyword argument 'oath'
+2018-06-10 12:49:27 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 30, in get
+    h = json_library.loads(response_token.text)['access_token']
+KeyError: 'access_token'
+2018-06-10 14:31:58 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 71, in __call__
+    self._hook('begin_request')
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 43, in _hook
+    return getattr(self, name)(*args, **kwargs)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/application/__init__.py", line 84, in begin_request
+    self.__authenticator__.authenticate_request()
+AttributeError: 'NoneType' object has no attribute 'authenticate_request'
+2018-06-10 16:35:53 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:36:37 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:40:19 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:40:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:41:36 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:42:49 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:43:33 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-10 16:45:58 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 11:17:00 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 13:13:39 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 13:15:58 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 13:19:23 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 13:25:16 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 13:28:10 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 13:31:24 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 66, in wrapper
+    raise ValueError('Cannot encode to json: %s' % type(result))
+ValueError: Cannot encode to json: <class 'NoneType'>
+2018-06-11 14:49:22 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 55, in get
+    google_access_token=profile['google_access_token']
+KeyError: 'google_access_token'
+2018-06-11 15:09:22 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 55, in get
+    google_access_token=profile['google_access_token']
+KeyError: 'google_access_token'
+2018-06-11 15:10:01 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 55, in get
+    google_access_token=profile['access_token']
+KeyError: 'google_access_token'
+2018-06-11 15:10:20 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 55, in get
+    google_access_token=profile['access_token']
+KeyError: 'access_token'

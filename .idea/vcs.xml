@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../leo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../nanohttp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../restfulpy" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../wolf" vcs="Git" />
   </component>

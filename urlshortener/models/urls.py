@@ -1,4 +1,4 @@
-from sqlalchemy import Integer, String, Sequence
+from sqlalchemy import Integer, String
 from restfulpy.orm import DeclarativeBase, Field
 
 

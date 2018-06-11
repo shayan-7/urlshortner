@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="restfulpy" />
     <orderEntry type="module" module-name="wolf" />
     <orderEntry type="module" module-name="leo" />
+    <orderEntry type="module" module-name="nanohttp" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />
