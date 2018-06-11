@@ -1,7 +1,0 @@
-nose
-coverage
-restfulpy>=0.41.3
-hashids
-gunicorn
-webtest
-bddrest
