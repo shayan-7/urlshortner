@@ -11,6 +11,8 @@ from urlshortener import Application
 client_secret_file = join(abspath(join(dirname(__file__), '..')),
                           'basedata/client_secrets.json')
 
+document_directory = join(abspath(join(dirname(__file__), '..')), 'document')
+
 
 class BDDTestClass(WebAppTestCase):
     application = Application()

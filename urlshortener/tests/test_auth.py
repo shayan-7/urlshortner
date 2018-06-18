@@ -3,7 +3,7 @@ from contextlib import contextmanager
 
 from bddrest.authoring import then, response
 from restfulpy.testing.mockup import http_server
-from urlshortener.tests.helpers import MockupApplication
+from urlshortener.tests.helpers import MockupApplication, document_directory
 from nanohttp import RestController, settings, json, context, HttpBadRequest, \
     HttpUnauthorized
 
@@ -17,7 +17,9 @@ class Token(RestController):
             return dict(
                 access_token='ya29.GlzVBYKNxVGGMl6euQ6U-_QIhylTdqoYXxW3MHOXL7\
                 r6WmO2xx_wkBht6TT6OIP0eoDjcQIm3Y6JXmAExohf7GU3xuhs6cF9EcL5DbT\
-                owmmH-nBlVE6Uop2IftiFtQ'
+                owmmH-nBlVE6Uop2IftiFtQ',
+                refresh_token='1/Yn_cvrK7qeJ9yNQcl77dHNqrqO1Q_ySU5MhibfXkvOo3\
+                vZct44-X5rUdvCRM9jJE'
             )
         elif '5/AAA' in context.form.get('code'):
             return dict(
@@ -78,6 +80,7 @@ class AuthTestCase(BDDTestClass):
             description='redirect',
             url='/auth',
             verb='POST',
+            autodoc=f'{document_directory}/auth_post_.md'
         )
         with self.given(**call):
             then(response.status_code == 302)
@@ -85,8 +88,22 @@ class AuthTestCase(BDDTestClass):
     def test_auth_get(self):
         with oauth_mockup_server(Root()):
             settings.mockup_server_url = settings.tokenizer['url']
-            settings.auth_uri_token = settings.mockup_server_url + '/token'
-            settings.oauth_url_api = settings.mockup_server_url + '/profile'
+            settings.auth_google_uri_token = f'{settings.mockup_server_url}' \
+                                             f'/token'
+            settings.oauth_url_google_api = f'{settings.mockup_server_url}' \
+                                            f'/profile'
+
+            call = dict(
+                title='GET',
+                description='incorrect code or state or scope',
+                url='/auth',
+                verb='GET',
+                query={
+                    'codew': 'incorrect'
+                }
+            )
+            with self.given(**call):
+                then(response.status_code == 400)
 
             call = dict(
                 title='GET',
@@ -134,7 +151,8 @@ class AuthTestCase(BDDTestClass):
                     'scope': 'https://www.googleapis.com/auth/userinfo.profile'
                              ' https://www.googleapis.com/auth/plus.me '
                              'https://www.googleapis.com/auth/userinfo.email'
-                }
+                },
+                autodoc=f'{document_directory}/auth_get_.md'
             )
             with self.given(**call):
                 then(response.status_code == 200)

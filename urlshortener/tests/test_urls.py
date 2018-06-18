@@ -2,7 +2,7 @@ import unittest
 
 from bddrest.authoring import then, response
 
-from urlshortener.tests.helpers import BDDTestClass
+from urlshortener.tests.helpers import BDDTestClass, document_directory
 
 
 class UrlsTestCase(BDDTestClass):
@@ -14,6 +14,7 @@ class UrlsTestCase(BDDTestClass):
             description='',
             url='/urls/zK',
             verb='GET',
+            autodoc=f'{document_directory}/urls_get_.md'
         )
         with self.given(**call):
             then(response.status_code == 302)
@@ -22,7 +23,7 @@ class UrlsTestCase(BDDTestClass):
             title='GET',
             description='',
             url='/urls/lP5',
-            verb='GET',
+            verb='GET'
         )
         with self.given(**call):
             then(response.status_code == 400)
@@ -31,7 +32,7 @@ class UrlsTestCase(BDDTestClass):
             title='GET',
             description='',
             url='/urls/lP',
-            verb='GET',
+            verb='GET'
         )
         with self.given(**call):
             then(response.status_code == 404)

@@ -4,6 +4,7 @@ from restfulpy.authentication import Authenticator
 
 from restfulpy import Application as BaseApplication
 from restfulpy.orm import DBSession
+from urlshortener.models.member import Member
 
 from urlshortener.models.urls import Url
 from .controllers.root import Root
@@ -34,7 +35,15 @@ class Application(BaseApplication):
     # noinspection PyArgumentList
     def insert_mockup(self):
         url = Url(url='http://www.varzesh3.com')
+        member = Member(
+            given_name='mohammad',
+            family_name='sheikhian',
+            email='mohammadsheikhian70@gmail.com',
+            google_access_token='fgbsdibfosdnfosd',
+            google_refresh_token='fgbdyugbdsiubgdufig'
+        )
         DBSession.add(url)
+        DBSession.add(member)
         DBSession.commit()
 
 

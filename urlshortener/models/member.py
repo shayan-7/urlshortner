@@ -10,4 +10,4 @@ class Member(DeclarativeBase):
     family_name = Field(String(50))
     email = Field(String(50))
     google_access_token = Field(String(500))
-
+    google_refresh_token = Field(String(500))

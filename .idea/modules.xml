@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bddrest/.idea/bddrest.iml" filepath="$PROJECT_DIR$/../bddrest/.idea/bddrest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flask/.idea/flask.iml" filepath="$PROJECT_DIR$/../flask/.idea/flask.iml" />
       <module fileurl="file://$PROJECT_DIR$/../leo/.idea/leo.iml" filepath="$PROJECT_DIR$/../leo/.idea/leo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../nanohttp/.idea/nanohttp.iml" filepath="$PROJECT_DIR$/../nanohttp/.idea/nanohttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../oauth/.idea/oauth.iml" filepath="$PROJECT_DIR$/../oauth/.idea/oauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/../restfulpy/.idea/restfulpy.iml" filepath="$PROJECT_DIR$/../restfulpy/.idea/restfulpy.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/urlshortener.iml" filepath="$PROJECT_DIR$/.idea/urlshortener.iml" />
       <module fileurl="file://$PROJECT_DIR$/../wolf/.idea/wolf.iml" filepath="$PROJECT_DIR$/../wolf/.idea/wolf.iml" />

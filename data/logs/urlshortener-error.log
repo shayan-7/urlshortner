@@ -10747,3 +10747,288 @@ Traceback (most recent call last):
   File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 55, in get
     google_access_token=profile['access_token']
 KeyError: 'access_token'
+2018-06-14 14:01:11 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 54, in get
+    if json_library.loads(response_token.text)['refresh_token'] is not None:
+KeyError: 'refresh_token'
+2018-06-14 14:05:14 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 58, in get
+    email=profile['email'],
+KeyError: 'email'
+2018-06-17 16:30:52 - main - ERROR - Internal Server Error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 72, in get
+    .filter_by(email=profile['email']).one_or_none()
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2863, in one_or_none
+    "Multiple rows were found for one_or_none()")
+sqlalchemy.orm.exc.MultipleResultsFound: Multiple rows were found for one_or_none()
+2018-06-18 10:36:24 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 25, in wrapper
+    return template_.render(**result)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/template.py", line 462, in render
+    return runtime._render(self, self.callable_, args, data)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/makomodules/index.mak.py", line 23, in render_body
+    __M_writer(str(name))
+  File "/home/mohammad/.virtualenvs/urlshortener/lib/python3.6/site-packages/mako/runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+2018-06-18 11:17:22 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 71, in __call__
+    self._hook('begin_request')
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 43, in _hook
+    return getattr(self, name)(*args, **kwargs)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/application/__init__.py", line 84, in begin_request
+    self.__authenticator__.authenticate_request()
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 151, in authenticate_request
+    self.ok(self.verify_token(encoded_token))
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 138, in verify_token
+    return JwtPrincipal.load(encoded_token)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+TypeError: startswith first arg must be bytes or a tuple of bytes, not str
+2018-06-18 11:20:19 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 71, in __call__
+    self._hook('begin_request')
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 43, in _hook
+    return getattr(self, name)(*args, **kwargs)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/application/__init__.py", line 84, in begin_request
+    self.__authenticator__.authenticate_request()
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 151, in authenticate_request
+    self.ok(self.verify_token(encoded_token))
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 138, in verify_token
+    return JwtPrincipal.load(encoded_token)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+TypeError: startswith first arg must be bytes or a tuple of bytes, not str
+2018-06-18 12:01:25 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal = JwtPrincipal.load(principal_encoded.decoded())
+AttributeError: 'bytes' object has no attribute 'decoded'
+2018-06-18 12:02:13 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal = JwtPrincipal.load(principal_encoded.decoded())
+AttributeError: 'bytes' object has no attribute 'decoded'
+2018-06-18 12:14:33 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal = JwtPrincipal.load(principal_encoded.decoded())
+AttributeError: 'bytes' object has no attribute 'decoded'
+2018-06-18 12:58:30 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal_encoded = context.environ['HTTP_TOKEN']
+KeyError: 'HTTP_TOKEN'
+2018-06-18 12:58:59 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal_encoded = context.environ['HTTP_TOKEN']
+KeyError: 'HTTP_TOKEN'
+2018-06-18 12:59:30 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal_encoded = context.environ['HTTP_TOKEN']
+KeyError: 'HTTP_TOKEN'
+2018-06-18 13:00:45 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 34, in get
+    if context.environ['HTTP_TOKEN'] is None:
+KeyError: 'HTTP_TOKEN'
+2018-06-18 13:01:12 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 34, in get
+    if context.environ['HTTP_TOKEN'] is None:
+KeyError: 'HTTP_TOKEN'
+2018-06-18 14:28:16 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 71, in __call__
+    self._hook('begin_request')
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 43, in _hook
+    return getattr(self, name)(*args, **kwargs)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/application/__init__.py", line 84, in begin_request
+    self.__authenticator__.authenticate_request()
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 151, in authenticate_request
+    self.ok(self.verify_token(encoded_token))
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 138, in verify_token
+    return JwtPrincipal.load(encoded_token)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+TypeError: startswith first arg must be bytes or a tuple of bytes, not str
+2018-06-18 14:28:42 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 71, in __call__
+    self._hook('begin_request')
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 43, in _hook
+    return getattr(self, name)(*args, **kwargs)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/application/__init__.py", line 84, in begin_request
+    self.__authenticator__.authenticate_request()
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 151, in authenticate_request
+    self.ok(self.verify_token(encoded_token))
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 138, in verify_token
+    return JwtPrincipal.load(encoded_token)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+TypeError: startswith first arg must be bytes or a tuple of bytes, not str
+2018-06-18 14:31:46 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 71, in __call__
+    self._hook('begin_request')
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 43, in _hook
+    return getattr(self, name)(*args, **kwargs)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/application/__init__.py", line 84, in begin_request
+    self.__authenticator__.authenticate_request()
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 151, in authenticate_request
+    self.ok(self.verify_token(encoded_token))
+  File "/home/mohammad/workspace/restfulpy/restfulpy/authentication.py", line 138, in verify_token
+    return JwtPrincipal.load(encoded_token)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+TypeError: startswith first arg must be bytes or a tuple of bytes, not str
+2018-06-18 14:45:47 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal = JwtPrincipal.load(context.identity)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+AttributeError: 'JwtPrincipal' object has no attribute 'startswith'
+2018-06-18 14:48:44 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/helpers.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/root.py", line 40, in get
+    principal = JwtPrincipal.load(context.identity)
+  File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
+    if encoded.startswith('Bearer '):
+AttributeError: 'JwtPrincipal' object has no attribute 'startswith'

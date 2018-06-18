@@ -1,11 +1,13 @@
+from hashids import Hashids
+
 from nanohttp import json, RestController, context
 from restfulpy.controllers import JsonPatchControllerMixin
 from restfulpy.orm import DBSession
-from hashids import Hashids
 
 import urlshortener
 from urlshortener.controllers.auth import Auth
 from urlshortener.controllers.urls import Urls
+from urlshortener.models.member import Member
 from urlshortener.models.urls import Url
 from .helpers import template
 
@@ -28,7 +30,25 @@ class Root(RestController):
 
     @template('index.mak')
     def get(self):
-        return dict()
+
+        if context.identity is None:
+            return dict(
+                name='',
+                family=''
+            )
+
+        member = DBSession.query(Member).\
+            filter_by(email=context.identity.email).one_or_none()
+        if member is None:
+            return dict(
+                name='',
+                family=''
+            )
+
+        return dict(
+            name=context.identity.payload['name'],
+            family=context.identity.payload['family']
+        )
 
     @template('successfully.mak')
     def post(self):

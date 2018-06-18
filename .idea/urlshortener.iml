@@ -8,6 +8,9 @@
     <orderEntry type="module" module-name="wolf" />
     <orderEntry type="module" module-name="leo" />
     <orderEntry type="module" module-name="nanohttp" />
+    <orderEntry type="module" module-name="flask" />
+    <orderEntry type="module" module-name="oauth" />
+    <orderEntry type="module" module-name="bddrest" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />
