@@ -25,7 +25,7 @@ class RootTestCase(BDDTestClass):
             description='',
             url='/',
             verb='GET',
-            autodoc=f'{document_directory}/root_get_with_authorization_.md'
+            autodoc=f'{document_directory}/root_get_with_authorization.md'
         )
         with self.given(**call):
             then(response.status_code == 200)
@@ -36,7 +36,7 @@ class RootTestCase(BDDTestClass):
             description='',
             url='/',
             verb='GET',
-            autodoc=f'{document_directory}/root_get_without_authorization_.md'
+            autodoc=f'{document_directory}/root_get_without_authorization.md'
         )
         with self.given(**call):
             then(response.status_code == 200)

@@ -11,17 +11,17 @@ class UrlsTestCase(BDDTestClass):
 
         call = dict(
             title='GET',
-            description='',
+            description='Found url using by hash id',
             url='/urls/zK',
             verb='GET',
-            autodoc=f'{document_directory}/urls_get_.md'
+            autodoc=f'{document_directory}/urls_get.md'
         )
         with self.given(**call):
             then(response.status_code == 302)
 
         call = dict(
             title='GET',
-            description='',
+            description='Invalid hash id',
             url='/urls/lP5',
             verb='GET'
         )
@@ -30,7 +30,7 @@ class UrlsTestCase(BDDTestClass):
 
         call = dict(
             title='GET',
-            description='',
+            description='Not found url with hash id',
             url='/urls/lP',
             verb='GET'
         )

@@ -1,6 +1,9 @@
 import requests
+import ast
 import json as json_library
 from os.path import join, dirname, abspath
+
+from restfulpy.principal import JwtPrincipal
 
 from restfulpy.orm import DBSession
 from nanohttp import RestController, text, HttpFound, context, json, settings,\
@@ -67,7 +70,7 @@ class Auth(RestController):
             DBSession.add(member)
             DBSession.commit()
 
-        return response_get_profile.text
+        return dict(authorization=JwtPrincipal(profile).dump().decode("utf-8"))
 
     @text
     def post(self):

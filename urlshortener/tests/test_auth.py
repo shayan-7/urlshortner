@@ -77,10 +77,10 @@ class AuthTestCase(BDDTestClass):
 
         call = dict(
             title='POST',
-            description='redirect',
+            description='Create redirect url',
             url='/auth',
             verb='POST',
-            autodoc=f'{document_directory}/auth_post_.md'
+            autodoc=f'{document_directory}/auth_post.md'
         )
         with self.given(**call):
             then(response.status_code == 302)
@@ -95,19 +95,17 @@ class AuthTestCase(BDDTestClass):
 
             call = dict(
                 title='GET',
-                description='incorrect code or state or scope',
+                description='Key value error code or state or scope',
                 url='/auth',
                 verb='GET',
-                query={
-                    'codew': 'incorrect'
-                }
+                query={}
             )
             with self.given(**call):
                 then(response.status_code == 400)
 
             call = dict(
                 title='GET',
-                description='incorrect code or state or scope',
+                description='invalid code or state or scope',
                 url='/auth',
                 verb='GET',
                 query={
@@ -152,7 +150,7 @@ class AuthTestCase(BDDTestClass):
                              ' https://www.googleapis.com/auth/plus.me '
                              'https://www.googleapis.com/auth/userinfo.email'
                 },
-                autodoc=f'{document_directory}/auth_get_.md'
+                autodoc=f'{document_directory}/auth_get.md'
             )
             with self.given(**call):
                 then(response.status_code == 200)

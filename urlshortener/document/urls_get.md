@@ -2,6 +2,8 @@
 
 ### GET /urls/zK
 
+Found url using by hash id
+
 ### Response: 302 Found
 
 #### Headers

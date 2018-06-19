@@ -11032,3 +11032,53 @@ Traceback (most recent call last):
   File "/home/mohammad/workspace/restfulpy/restfulpy/principal.py", line 30, in load
     if encoded.startswith('Bearer '):
 AttributeError: 'JwtPrincipal' object has no attribute 'startswith'
+2018-06-19 11:48:37 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 71, in get
+    result = ast.literal_eval(response_get_profile.text)
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7fa2100aa438>
+2018-06-19 11:49:02 - main - ERROR - Internal server error
+Traceback (most recent call last):
+  File "/home/mohammad/workspace/nanohttp/nanohttp/application.py", line 83, in __call__
+    response_body = self.__root__(*remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 84, in __call__
+    return self._serve_handler(handler, remaining_paths)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/controllers.py", line 79, in _serve_handler
+    return handler(*remaining_paths, **kwargs)
+  File "/home/mohammad/workspace/nanohttp/nanohttp/decorators.py", line 62, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohammad/workspace/urlshortener/urlshortener/controllers/auth.py", line 71, in get
+    result = ast.literal_eval(response_get_profile.text)
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7f8a05ea82e8>
